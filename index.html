@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mujtaba Haider</title>
+<meta property="og:title" content="Mujtaba Haider · HR Executive">
+<meta property="og:description" content="HR Executive, People &amp; Culture, Talent Acquisition. From the first interview to the farewell.">
+<meta property="og:image" content="/og.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<meta name="description" content="Mujtaba Haider, HR Executive in Talent Acquisition. From the first interview to the farewell.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: a people-first page. Hero = the ID badge every new hire gets on day one.
+   Body = the employee journey, drawn as one continuous path the reader travels down. */
+:root{
+  --bg:#F3F5FA; --card:#FFFFFF; --ink:#0D1424; --soft:#596275; --line:#DCE1EB;
+  --sun:#FFC23D; --sun-ink:#1B1403; --grass:#138A5E; --sky:#3D6BFF; --band:#0D1424; --band-ink:#F3F5FA; --band-soft:#9AA3B5;
+  --display:"Unbounded","Arial Black",system-ui,sans-serif;
+  --text:"Manrope",ui-sans-serif,system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0B0F19; --card:#151B28; --ink:#EEF1F7; --soft:#9AA3B5; --line:#252D3D; --grass:#3FC98F; --sky:#7C9BFF;
+  --band:#151B28; --band-ink:#EEF1F7; --band-soft:#9AA3B5; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0B0F19; --card:#151B28; --ink:#EEF1F7; --soft:#9AA3B5; --line:#252D3D; --grass:#3FC98F; --sky:#7C9BFF;
+  --band:#151B28; --band-ink:#EEF1F7; --band-soft:#9AA3B5; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:1.02rem;line-height:1.6;padding-inline:clamp(1rem,4vw,3rem);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3{margin:0;font-family:var(--display);line-height:1.05;letter-spacing:-.02em;text-wrap:balance}
+.w{max-width:74rem;margin-inline:auto}
+.eyebrow{font-family:var(--display);font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:6px}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-block:.9rem;margin-inline:calc(-1 * clamp(1rem,4vw,3rem));padding-inline:clamp(1rem,4vw,3rem);background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.mark{font-family:var(--display);font-weight:900;font-size:.85rem;width:2.4rem;height:2.4rem;border-radius:12px;background:var(--sun);color:var(--sun-ink);display:grid;place-items:center;text-decoration:none;transform:rotate(-6deg)}
+.nav{display:flex;gap:.2rem;padding:.25rem;border:1px solid var(--line);border-radius:999px;background:var(--card)}
+.nav a{text-decoration:none;font-weight:600;font-size:.9rem;padding:.45rem .9rem;border-radius:999px;transition:background .2s,color .2s}
+.nav a:hover{background:color-mix(in srgb,var(--ink) 7%,transparent)}
+.nav a.on{background:var(--ink);color:var(--bg)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:2rem;align-items:center;padding-block:2.5rem 4rem;min-height:min(44rem,88vh)}
+.hero-copy{display:grid;gap:1.2rem;min-width:0}
+.hi{display:inline-flex;align-items:center;gap:.6rem;font-weight:700;font-size:.95rem;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.35rem .9rem .35rem .4rem;justify-self:start;max-width:100%;flex-wrap:wrap;row-gap:.2rem}
+@media (max-width:520px){.hi{font-size:.8rem;gap:.4rem}.hi .dot{width:1.3rem;height:1.3rem}}
+.hi .sep{color:var(--soft);font-weight:500;margin-inline:.1rem}
+.hi .dot{width:1.6rem;height:1.6rem;border-radius:50%;background:var(--grass);display:grid;place-items:center}
+.hi .dot::after{content:"";width:.55rem;height:.55rem;border-radius:50%;background:#fff;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(.6);opacity:.6}}
+.hero h1{font-size:clamp(2.8rem,7.4vw,6.4rem);font-weight:900;line-height:.95}
+.hero h1 .l{display:block}
+.hero h1 .hl{position:relative;display:inline-block;z-index:0}
+.hero h1 .hl::after{content:"";position:absolute;left:-.06em;right:-.06em;bottom:.08em;height:.32em;background:var(--sun);z-index:-1;border-radius:.1em;transform-origin:left;animation:swipe .8s .5s cubic-bezier(.2,.8,.2,1) both}
+@keyframes swipe{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.hero .role{font-family:var(--display);font-weight:600;font-size:clamp(.95rem,1.6vw,1.15rem);letter-spacing:-.01em}
+.hero .lede{font-size:1.12rem;color:var(--soft);max-width:34rem}
+.ctas{display:flex;gap:.7rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.95rem;text-decoration:none;padding:.8rem 1.25rem;border-radius:999px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;transition:transform .2s}
+.btn.solid{background:var(--ink);color:var(--bg)}
+.btn:hover{transform:translateY(-2px)}
+
+/* badge */
+.stage{position:relative;height:34rem;min-width:0;touch-action:none;user-select:none;-webkit-user-select:none}
+.stage svg.lanyard{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.badge{position:absolute;left:50%;top:0;width:17rem;height:24.5rem;margin-left:-8.5rem;transform-origin:50% 0;perspective:1200px;cursor:grab}
+.badge.dragging{cursor:grabbing}
+.flip{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.3,1.3,.5,1)}
+.badge.flipped .flip{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:20px;background:var(--card);border:1px solid var(--line);box-shadow:0 30px 60px -25px rgba(13,20,36,.5),0 4px 10px rgba(13,20,36,.08);overflow:hidden;display:grid;grid-template-rows:auto 1fr auto}
+.face.back{transform:rotateY(180deg)}
+.clip{position:absolute;left:50%;top:-1.4rem;width:3.2rem;height:2.2rem;margin-left:-1.6rem;border-radius:8px;background:linear-gradient(#C9CEDA,#9EA6B7);box-shadow:inset 0 -3px 0 rgba(0,0,0,.15);z-index:3}
+.slot{width:3.4rem;height:.55rem;border-radius:999px;background:var(--bg);border:1px solid var(--line);margin:1rem auto 0}
+.b-top{background:var(--sun);color:var(--sun-ink);padding:1.4rem 1.2rem 2.4rem;display:grid;gap:.1rem}
+.b-top .co{font-family:var(--display);font-weight:800;font-size:.72rem;letter-spacing:.14em}
+.b-top .kind{font-size:.72rem;font-weight:600;opacity:.75}
+.b-body{padding:1.1rem 1.2rem;display:grid;gap:.8rem;align-content:start}
+.avatar{width:4.6rem;height:4.6rem;border-radius:16px;overflow:hidden;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-family:var(--display);font-weight:900;font-size:1.5rem;margin-top:-2.6rem;border:4px solid var(--card)}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.b-name{font-family:var(--display);font-weight:800;font-size:1.25rem;line-height:1.1}
+.b-role{font-size:.85rem;color:var(--soft);font-weight:600}
+.b-fields{display:grid;grid-template-columns:1fr 1fr;gap:.5rem .8rem;margin-top:.3rem}
+.b-fields div{display:grid;gap:.05rem;min-width:0}
+.b-fields span{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);font-weight:700}
+.b-fields b{font-size:.82rem}
+.b-foot{display:flex;justify-content:space-between;align-items:center;gap:.6rem;padding:.75rem 1.1rem;border-top:1px dashed var(--line);font-size:.7rem;color:var(--soft);font-weight:600}
+.barcode{height:1.4rem;width:4.6rem;flex:none;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 4px,var(--ink) 4px 5px,transparent 5px 8px,var(--ink) 8px 11px,transparent 11px 12px)}
+.back .b-body{padding-top:1.5rem;gap:.9rem}
+.back h3{font-size:1.05rem;font-weight:800}
+.back ul{margin:0;padding:0;list-style:none;display:grid;gap:.45rem;font-size:.9rem;font-weight:600}
+.back li{display:flex;gap:.55rem;align-items:baseline}
+.back li::before{content:"";flex:none;width:.5rem;height:.5rem;border-radius:2px;background:var(--sun);transform:translateY(-.05rem) rotate(45deg)}
+.back .quote{font-size:.85rem;color:var(--soft);font-style:italic;border-left:3px solid var(--sun);padding-left:.7rem}
+.hint{position:absolute;left:50%;bottom:.2rem;transform:translateX(-50%);font-size:.78rem;font-weight:700;color:var(--soft);white-space:nowrap;display:flex;gap:.4rem;align-items:center}
+.hint kbd{font-family:var(--text);font-size:.7rem;border:1px solid var(--line);background:var(--card);border-radius:6px;padding:.05rem .4rem}
+
+/* facts strip */
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:2px solid var(--ink);border-radius:20px;overflow:hidden;background:var(--card)}
+.facts>div{padding:1.2rem 1.3rem;display:grid;gap:.25rem;border-right:2px solid var(--ink);min-width:0}
+.facts>div:last-child{border-right:0}
+.facts b{font-family:var(--display);font-weight:800;font-size:clamp(1.05rem,2vw,1.4rem);line-height:1.1}
+.facts span{font-size:.9rem;color:var(--soft);font-weight:500}
+
+/* sections */
+section.sec{padding-block:6rem 1rem;scroll-margin-top:4rem}
+.sec-head{display:grid;gap:.8rem;margin-bottom:3rem;max-width:44rem}
+.sec-head h2{font-size:clamp(2rem,4.6vw,3.4rem);font-weight:900}
+.sec-head p{font-size:1.08rem;color:var(--soft)}
+
+/* quote */
+.pull{margin-top:5rem;display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:clamp(1.5rem,4vw,3rem);align-items:center;background:var(--band);color:var(--band-ink);border-radius:28px;padding:clamp(1.5rem,4vw,3rem)}
+.portrait{margin:0;border-radius:20px;overflow:hidden;aspect-ratio:3/4.4;transform:rotate(-2.5deg);border:5px solid var(--sun);box-shadow:0 20px 40px -20px rgba(0,0,0,.6);transition:transform .5s cubic-bezier(.3,1.4,.5,1)}
+.portrait:hover{transform:rotate(0) scale(1.02)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;display:block}
+.pq{display:grid;gap:.5rem;min-width:0}
+.pull .qm{font-family:var(--display);font-weight:900;font-size:5rem;line-height:.8;color:var(--sun)}
+.pull blockquote{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(1.25rem,2.8vw,2rem);line-height:1.3;letter-spacing:-.01em}
+.pull cite{display:block;margin-top:1rem;font-family:var(--text);font-style:normal;font-size:.9rem;color:var(--band-soft);font-weight:600}
+
+/* journey */
+.journey{position:relative}
+.journey svg.path{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.journey .trail{fill:none;stroke:var(--line);stroke-width:4;stroke-linecap:round;stroke-dasharray:2 12}
+.journey .drawn{fill:none;stroke:var(--sun);stroke-width:6;stroke-linecap:round}
+.journey .walker{fill:var(--ink);stroke:var(--sun);stroke-width:4}
+.stops{position:relative;display:grid;gap:5rem;padding-block:1rem}
+.stop{position:relative;width:min(29rem,48%);display:grid;gap:.8rem;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:1.5rem 1.6rem;box-shadow:0 20px 40px -30px rgba(13,20,36,.35)}
+.stop:nth-child(even){margin-left:auto}
+@media (min-width:901px){.stops{gap:0}.stop+.stop{margin-top:-3.5rem}}
+.stop .num{position:absolute;top:-1.1rem;left:1.4rem;font-family:var(--display);font-weight:900;font-size:.8rem;background:var(--ink);color:var(--bg);border-radius:999px;padding:.35rem .75rem}
+.stop.lit .num{background:var(--sun);color:var(--sun-ink)}
+.stop h3{font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:800;margin-top:.4rem}
+.stop p{color:var(--soft)}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem}
+.tag{font-size:.78rem;font-weight:700;padding:.3rem .7rem;border-radius:999px;background:color-mix(in srgb,var(--sun) 22%,var(--card));color:var(--ink)}
+.stop .shot{margin:.2rem 0 0;border-radius:14px;overflow:hidden;position:relative;aspect-ratio:5/4;background:var(--bg)}
+.stop .shot img{width:100%;height:100%;object-fit:cover;object-position:60% 30%;display:block;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.stop:hover .shot img{transform:scale(1.04)}
+.stop .shot figcaption{position:absolute;left:.7rem;bottom:.7rem;font-size:.75rem;font-weight:700;background:var(--sun);color:var(--sun-ink);border-radius:999px;padding:.25rem .7rem}
+.stop .ico{width:3rem;height:3rem;border-radius:14px;background:var(--bg);display:grid;place-items:center}
+.stop .ico svg{width:1.6rem;height:1.6rem;stroke:var(--ink);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.backbone{margin-top:4rem;display:flex;gap:1rem;align-items:center;flex-wrap:wrap;border:2px dashed var(--line);border-radius:20px;padding:1.2rem 1.4rem}
+.backbone b{font-family:var(--display);font-weight:800;font-size:1rem}
+.backbone p{color:var(--soft);flex:1 1 20rem}
+
+/* culture */
+.culture{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.sticker{position:relative;aspect-ratio:1/1.08;border-radius:26px;padding:1.3rem;display:grid;align-content:space-between;color:var(--sun-ink);transform:rotate(var(--r,0deg));transition:transform .35s cubic-bezier(.3,1.5,.5,1);cursor:default;overflow:hidden}
+.sticker:hover{transform:rotate(0deg) scale(1.04)}
+.sticker h3{font-size:1.3rem;font-weight:800}
+.sticker p{font-size:.9rem;font-weight:600;opacity:.85}
+.sticker svg{width:3.4rem;height:3.4rem;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.s1{background:#FFC23D;--sticker-c:#FFC23D;--r:-3deg}.s2{background:#9FE3C4;--sticker-c:#9FE3C4;--r:2deg}.s3{background:#B9C8FF;--sticker-c:#B9C8FF;--r:-2deg}.s4{background:#FFB3C1;--sticker-c:#FFB3C1;--r:3deg}
+.sticker.photo{color:#fff;align-content:end;border:5px solid var(--sticker-c)}
+.sticker.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.sticker.photo:hover img{transform:scale(1.06)}
+.sticker.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(8,10,16,.8) 100%)}
+.sticker.photo>div{position:relative;z-index:1}
+.sticker.photo p{opacity:.9}
+.ptag{position:absolute;top:.8rem;left:.8rem;z-index:1;font-size:.72rem;font-weight:800;background:var(--sticker-c);color:var(--sun-ink);border-radius:999px;padding:.25rem .65rem}
+
+
+/* earlier */
+.earlier{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2.5rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:clamp(1.5rem,4vw,3rem)}
+.earlier .txt{display:grid;gap:.9rem;min-width:0}
+.earlier h3{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:800}
+.earlier .when{font-weight:700;color:var(--soft);font-size:.92rem}
+.earlier ul{margin:0;padding-left:1.1rem;display:grid;gap:.45rem;color:var(--soft)}
+.phone-wrap{position:relative;justify-self:center;width:min(16.5rem,100%)}
+.phone{position:relative;width:100%;aspect-ratio:9/18.5;border-radius:38px;background:#0D1424;padding:9px;transform:rotate(4deg);box-shadow:0 40px 70px -30px rgba(13,20,36,.55),inset 0 0 0 2px #2A3246}
+.phone::before{content:"";position:absolute;top:16px;left:50%;width:5.2rem;height:1.25rem;margin-left:-2.6rem;background:#0D1424;border-radius:999px;z-index:3}
+.scr{position:relative;width:100%;height:100%;border-radius:30px;overflow:hidden;background:#fff;color:#111;display:grid;grid-template-rows:auto auto auto auto 1fr auto;font-family:var(--text)}
+.scr .sb{display:flex;justify-content:space-between;align-items:center;padding:.55rem 1.1rem .2rem;font-size:.62rem;font-weight:700}
+.scr .sb i{display:inline-block;width:1rem;height:.45rem;border:1.5px solid #111;border-radius:2px;position:relative}
+.scr .sb i::after{content:"";position:absolute;inset:1px 3px 1px 1px;background:#111;border-radius:1px}
+.scr .app{display:flex;justify-content:space-between;align-items:center;padding:.35rem .8rem .3rem}
+.scr .app b{font-family:"Unbounded",sans-serif;font-weight:800;font-size:.8rem;letter-spacing:-.02em}
+.scr .app span{display:flex;gap:.55rem}
+.ic{width:15px;height:15px;stroke:#111;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.stories{display:flex;gap:.45rem;padding:.3rem .7rem .55rem;border-bottom:1px solid #EEE}
+.story{display:grid;justify-items:center;gap:.15rem;font-size:.5rem;color:#444;font-weight:600}
+.story i{width:2.05rem;height:2.05rem;border-radius:50%;padding:2px;background:conic-gradient(#FFC23D,#FF6A88,#8A5CFF,#FFC23D)}
+.story i::after{content:"";display:block;width:100%;height:100%;border-radius:50%;border:2px solid #fff;background:var(--g,#EEE)}
+.story.seen i{background:#DDD}
+.phead{display:flex;align-items:center;gap:.45rem;padding:.5rem .7rem}
+.phead .av{width:1.55rem;height:1.55rem;border-radius:50%;background:#FFC23D;display:grid;place-items:center;font:800 .5rem "Unbounded",sans-serif}
+.phead div{display:grid;line-height:1.15;flex:1}
+.phead b{font-size:.62rem}
+.phead small{font-size:.52rem;color:#777}
+.post{position:relative;margin:0;background:linear-gradient(145deg,#FFC23D 0%,#FF9E6B 55%,#FF6A88 100%);display:grid;place-content:center;justify-items:center;text-align:center;gap:.35rem;overflow:hidden;min-height:0}
+.post::before{content:"";position:absolute;width:9rem;height:9rem;border-radius:50%;background:rgba(255,255,255,.18);top:-3rem;right:-3rem}
+.post::after{content:"";position:absolute;width:6rem;height:6rem;border-radius:24px;background:rgba(13,20,36,.08);bottom:-2rem;left:-1.5rem;transform:rotate(20deg)}
+.post .kick{position:relative;z-index:1;font:700 .5rem var(--text);letter-spacing:.16em;text-transform:uppercase;color:#1B1403;opacity:.75}
+.post .big{position:relative;z-index:1;font:900 1.35rem/1 "Unbounded",sans-serif;color:#1B1403;letter-spacing:-.03em}
+.post .pill{position:relative;z-index:1;font:700 .52rem var(--text);background:#0D1424;color:#fff;border-radius:999px;padding:.25rem .6rem}
+.post .heart{position:absolute;z-index:2;left:50%;top:50%;width:3.2rem;height:3.2rem;margin:-1.6rem 0 0 -1.6rem;fill:#fff;opacity:0;transform:scale(.3)}
+.phone-wrap.live .post .heart{animation:dbl 3.6s 1.2s ease-in-out infinite}
+@keyframes dbl{0%,8%{opacity:0;transform:scale(.3)}14%{opacity:1;transform:scale(1.1)}20%{transform:scale(.95)}34%{opacity:1;transform:scale(1)}44%,100%{opacity:0;transform:scale(1.2)}}
+.acts{display:flex;align-items:center;gap:.6rem;padding:.45rem .7rem .15rem}
+.acts .sp{flex:1}
+.acts .like{transition:fill .2s,stroke .2s}
+.phone-wrap.live .acts .like{animation:likefill 3.6s 1.2s ease-in-out infinite}
+@keyframes likefill{0%,12%{fill:none;stroke:#111}16%,100%{fill:#FF3B5C;stroke:#FF3B5C}}
+.cap{padding:.1rem .7rem .5rem;font-size:.56rem;line-height:1.35;color:#222}
+.cap b{font-weight:800}
+.cap .tags{color:#3D6BFF}
+.cap small{display:block;color:#888;margin-top:.15rem}
+.nav5{display:flex;justify-content:space-around;align-items:center;padding:.45rem .5rem .7rem;border-top:1px solid #EEE}
+.float-card{position:absolute;z-index:4;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:.55rem .75rem;box-shadow:0 18px 30px -18px rgba(13,20,36,.45);font-size:.72rem;font-weight:700;display:grid;gap:.15rem}
+.float-card small{font-size:.62rem;color:var(--soft);font-weight:600}
+.fc1{left:-2.2rem;top:40%;transform:rotate(-4deg)}
+.fc2{right:-2.4rem;bottom:18%;transform:rotate(3deg)}
+.cal{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;margin-top:.25rem}
+.cal i{width:.85rem;height:.85rem;border-radius:3px;background:var(--line)}
+.cal i.on{background:var(--sun)}
+.cal i.on2{background:#FF9DB5}
+@media (max-width:520px){.fc1{left:-.6rem}.fc2{right:-.6rem}}
+.phone-cap{font-size:.75rem;color:var(--soft);text-align:center;margin-top:.6rem;font-weight:600}
+@keyframes pop{from{transform:scale(.6);opacity:.001}}
+
+/* education */
+.edu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.edu>div{border-top:4px solid var(--ink);padding-top:1rem;display:grid;gap:.35rem;align-content:start;min-width:0}
+.edu .yr{font-family:var(--display);font-weight:800;font-size:.8rem;color:var(--soft)}
+.edu h3{font-size:1.2rem;font-weight:800}
+.edu p{color:var(--soft);font-size:.95rem}
+.award{display:inline-flex;gap:.4rem;align-items:center;font-size:.8rem;font-weight:800;background:var(--sun);color:var(--sun-ink);border-radius:999px;padding:.25rem .7rem;width:max-content}
+
+/* toolkit */
+.kit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.kit>div{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:1.4rem;display:grid;gap:.8rem;align-content:start;min-width:0}
+.kit h3{font-size:1rem;font-weight:800}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem}
+.chip{font-size:.88rem;font-weight:600;padding:.4rem .8rem;border-radius:999px;border:1.5px solid var(--line);background:var(--bg)}
+.chip.big{border-color:var(--ink);background:var(--ink);color:var(--bg)}
+
+/* contact */
+.contact{margin-block:6rem 3rem;background:var(--sun);color:var(--sun-ink);border-radius:32px;padding:clamp(1.6rem,5vw,4rem);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:2rem;align-items:end;scroll-margin-top:4rem}
+.contact h2{font-size:clamp(2.2rem,6vw,4.6rem);font-weight:900;line-height:.95}
+.contact p{font-weight:600;margin-top:1rem;max-width:26rem}
+.crows{display:grid;gap:.7rem}
+.crow{display:flex;justify-content:space-between;align-items:center;gap:.8rem;background:rgba(255,255,255,.55);border-radius:16px;padding:.8rem 1rem;flex-wrap:wrap}
+.crow .k{font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+.crow .v{font-weight:800;user-select:all;overflow-wrap:anywhere}
+.crow a{font-weight:800}
+.copy{font:700 .75rem var(--text);border:1.5px solid var(--sun-ink);background:transparent;color:var(--sun-ink);border-radius:999px;padding:.25rem .7rem;cursor:pointer}
+footer{padding-block:1rem 3rem;color:var(--soft);font-size:.85rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+/* cv dialog */
+dialog.cvd{border:0;padding:0;background:var(--bg);color:var(--ink);width:min(52rem,96vw);max-height:92vh;border-radius:18px;overflow:hidden}
+dialog.cvd::backdrop{background:rgba(8,10,16,.8)}
+.cvbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.8rem 1rem;border-bottom:1px solid var(--line);font-weight:800;font-size:.92rem}
+.cvbar button{font:700 .8rem var(--text);background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:.45rem .9rem;cursor:pointer}
+.cvpages{overflow-y:auto;max-height:calc(92vh - 3.3rem);padding:1rem;display:grid;gap:1rem;background:var(--line)}
+.cvpages img{display:block;width:100%;height:auto;border-radius:6px;background:#fff}
+
+/* reveal */
+html.rv-on .rv:not(.in){opacity:.001;transform:translateY(30px)}
+html.rv-on .rv{transition:opacity .7s ease,transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}
+.hero-copy>*{animation:up .8s cubic-bezier(.2,.8,.2,1) both}
+.hero-copy>*:nth-child(2){animation-delay:.08s}.hero-copy>*:nth-child(3){animation-delay:.16s}.hero-copy>*:nth-child(4){animation-delay:.24s}.hero-copy>*:nth-child(5){animation-delay:.32s}
+@keyframes up{from{opacity:.001;transform:translateY(24px)}}
+
+@media (max-width:900px){
+  .stage{margin-top:1.5rem}
+  .hero{grid-template-columns:minmax(0,1fr);min-height:0;padding-bottom:2rem}
+  .stage{height:30rem}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .facts>div:nth-child(2){border-right:0}
+  .facts>div:nth-child(-n+2){border-bottom:2px solid var(--ink)}
+  .stop,.stop:nth-child(even){width:auto;margin-left:3rem}
+  .culture{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .earlier,.contact{grid-template-columns:minmax(0,1fr)}
+  .edu{grid-template-columns:minmax(0,1fr)}
+  .kit{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:520px){
+  .nav a{padding:.4rem .6rem;font-size:.85rem}
+  .badge{width:15.5rem;height:26rem;margin-left:-7.75rem}
+  .stage{height:36.5rem}
+  .hint{bottom:0}
+  .crow .v{font-size:.9rem;overflow-wrap:normal;word-break:keep-all}
+  .crow{padding:.75rem .85rem}
+  .sticker.photo p{display:none}
+  .ptag{font-size:.62rem;top:.55rem;left:.55rem}
+  .pull{grid-template-columns:minmax(0,1fr)}
+  .portrait{max-width:12rem}
+  .pull .qm{font-size:3.5rem}
+  .stop,.stop:nth-child(even){margin-left:2.2rem;padding:1.3rem}
+  .culture{gap:.7rem}
+  .sticker{padding:1rem;border-radius:20px}
+  .sticker h3{font-size:1.05rem}
+  .sticker p{font-size:.8rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html.rv-on .rv:not(.in){opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="w">
+  <header class="top">
+    <a class="mark" href="#top" aria-label="Back to top">MH</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#journey" data-sec="journey">Work</a>
+      <a href="#about" data-sec="about">About</a>
+      <a href="#contact" data-sec="contact">Contact</a>
+      <a href="#cv" data-cv data-sec="cv">CV</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-copy">
+      <span class="hi"><span class="dot" aria-hidden="true"></span>HR Executive <span class="sep" aria-hidden="true">|</span> People &amp; Culture <span class="sep" aria-hidden="true">|</span> Talent Acquisition</span>
+      <h1><span class="l">Mujtaba</span><span class="l"><span class="hl">Haider</span></span></h1>
+      <p class="lede">I look after people from their first interview to their farewell: hiring them, settling them in, keeping teams connected, and turning feedback into real changes.</p>
+      <div class="ctas"><a class="btn solid" href="#journey">See how I work ↓</a><a class="btn" href="#cv" data-cv>View CV</a></div>
+    </div>
+
+    <div class="stage" id="stage" aria-label="Mujtaba's ID badge. Drag it to swing, click to flip.">
+      <svg class="lanyard" aria-hidden="true"><path id="strap" fill="none" stroke="var(--sky)" stroke-width="10" stroke-linecap="round"/><path id="strap2" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="2" stroke-dasharray="1 7" stroke-linecap="round"/></svg>
+      <div class="badge" id="badge" tabindex="0" role="button" aria-pressed="false" aria-label="Flip badge">
+        <div class="flip">
+          <div class="face front">
+            <span class="clip" aria-hidden="true"></span>
+            <div class="b-top"><div class="slot" aria-hidden="true" style="margin:0 auto .6rem;background:color-mix(in srgb,var(--sun-ink) 18%,transparent);border:0"></div><span class="co">PEOPLE &amp; CULTURE</span></div>
+            <div class="b-body">
+              <div class="avatar" aria-hidden="true">MH</div>
+              <div><div class="b-name">Mujtaba Haider</div><div class="b-role">HR Executive · Talent Acquisition</div></div>
+              <div class="b-fields">
+                <div><span>Team</span><b>Human Resources</b></div>
+                <div><span>Since</span><b>June 2025</b></div>
+                <div><span>Based in</span><b>Islamabad</b></div>
+                <div><span>Studied</span><b>BBA, NUST</b></div>
+              </div>
+            </div>
+            <div class="b-foot"><span class="barcode" aria-hidden="true"></span><span>Flip me ↻</span></div>
+          </div>
+          <div class="face back">
+            <span class="clip" aria-hidden="true"></span>
+            <div class="b-top"><div class="slot" aria-hidden="true" style="margin:0 auto .6rem;background:color-mix(in srgb,var(--sun-ink) 18%,transparent);border:0"></div><span class="co">ASK ME ABOUT</span><span class="kind">The back of the badge</span></div>
+            <div class="b-body">
+              <ul>
+                <li>Hiring, start to finish</li>
+                <li>Onboarding new people</li>
+                <li>Offsites and match days</li>
+                <li>Exit interviews</li>
+                <li>PeopleForce and GoHire</li>
+              </ul>
+              <p class="quote">"Making sure the workplace actually feels good to be part of."</p>
+            </div>
+            <div class="b-foot"><span>mujtabahaider215@gmail.com</span><span>↻</span></div>
+          </div>
+        </div>
+      </div>
+      <span class="hint" id="hint" aria-hidden="true">Drag the badge · <kbd>click</kbd> to flip</span>
+    </div>
+  </section>
+
+  <div class="facts rv">
+    <div><b>1.5 years</b><span>of experience, mostly in HR at a tech company</span></div>
+    <div><b>Full cycle</b><span>from job post to exit interview</span></div>
+    <div><b>BBA, HRM</b><span>NUST, graduated 2025</span></div>
+    <div><b>PeopleForce</b><span>and GoHire, kept up to date</span></div>
+  </div>
+
+  <div class="pull rv">
+    <figure class="portrait"><img src="portrait.webp" alt="Portrait of Mujtaba Haider" loading="lazy"></figure>
+    <div class="pq"><span class="qm" aria-hidden="true">“</span><blockquote>I enjoy the people side of HR: finding the right candidates, helping new hires settle in, and making sure the workplace actually feels good to be part of.</blockquote><cite>Mujtaba</cite></div>
+  </div>
+
+  <section class="sec" id="journey">
+    <div class="sec-head rv">
+      <span class="eyebrow">The work</span>
+      <h2>The whole journey, one person</h2>
+      <p>I work with senior leadership across every stage of an employee's time with the company. Scroll down the path.</p>
+    </div>
+
+    <div class="journey" id="jr">
+      <svg class="path" aria-hidden="true"><path class="trail" id="trail"/><path class="drawn" id="drawn"/><circle class="walker" id="walker" r="11"/></svg>
+      <div class="stops">
+        <article class="stop rv">
+          <span class="num">01 · Hire</span>
+          <div class="ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
+          <h3>Finding the right people</h3>
+          <p>I run recruitment from start to finish: writing job posts, sourcing candidates, screening applications, and interviewing alongside the COO or the relevant team lead.</p>
+          <div class="tags"><span class="tag">Job posts</span><span class="tag">Sourcing</span><span class="tag">Screening</span><span class="tag">Interviews</span></div>
+        </article>
+        <article class="stop rv">
+          <span class="num">02 · Onboard</span>
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
+          <h3>Day one feels like home</h3>
+          <p>I onboard every new hire personally, walking them through how the company works and what the culture is like, so they get up to speed and feel at home from their first day.</p>
+          <div class="tags"><span class="tag">Every new hire</span><span class="tag">Processes</span><span class="tag">Culture</span></div>
+        </article>
+        <article class="stop rv">
+          <span class="num">03 · Engage</span>
+          <div class="ico"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20c0-3 3-5 6-5s6 2 6 5"/><path d="M14 15.5c.6-.3 1.3-.5 2-.5 3 0 6 2 6 5"/></svg></div>
+          <h3>Keeping teams connected</h3>
+          <p>I organize offsites, cricket and futsal matches, and celebration events that keep morale high and bring people from different teams together.</p>
+          <div class="tags"><span class="tag">Offsites</span><span class="tag">Cricket</span><span class="tag">Futsal</span><span class="tag">Celebrations</span></div>
+        </article>
+        <article class="stop rv">
+          <span class="num">04 · Listen</span>
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/><path d="M9 11h6M9 14h4"/></svg></div>
+          <h3>Feedback that changes things</h3>
+          <p>I gather feedback regularly from employees and managers, then work with leadership to turn what we hear into policy changes and better processes.</p>
+          <div class="tags"><span class="tag">Employee feedback</span><span class="tag">Manager feedback</span><span class="tag">Policy</span></div>
+        </article>
+        <article class="stop rv">
+          <span class="num">05 · Offboard</span>
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="m10 17-5-5 5-5"/><path d="M5 12h11"/></svg></div>
+          <h3>Leaving well</h3>
+          <p>I handle farewells, exit interviews and handover documentation, and I use what people say on the way out to flag patterns worth fixing.</p>
+          <div class="tags"><span class="tag">Farewells</span><span class="tag">Exit interviews</span><span class="tag">Handovers</span></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="backbone rv">
+      <b>Behind every stage</b>
+      <p>I keep PeopleForce and GoHire up to date, so recruitment pipelines, employee records and HR data stay organized for the leadership team.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="culture">
+    <div class="sec-head rv">
+      <span class="eyebrow">Culture</span>
+      <h2>The fun part of the job</h2>
+      <p>Events I organize to keep people connected.</p>
+    </div>
+    <div class="culture">
+      <div class="sticker s1 photo rv"><img src="fair.webp" alt="Mujtaba talking with people at a D4 Interactive booth" loading="lazy" style="object-position:62% 30%"><span class="ptag">Out of the office</span><div><h3>Offsites</h3><p>Days out of the office, together.</p></div></div>
+      <div class="sticker s2 photo rv"><img src="cricket.webp" alt="The team together at a sports ground" loading="lazy" style="object-position:50% 45%"><span class="ptag">Team day out</span><div><h3>Cricket</h3><p>Match days across teams.</p></div></div>
+      <div class="sticker s3 photo rv"><img src="futsal.webp" alt="The team after a futsal match under floodlights" loading="lazy"><span class="ptag">Match night</span><div><h3>Futsal</h3><p>Five-a-side, all levels.</p></div></div>
+      <div class="sticker s4 photo rv"><img src="celebrate.webp" alt="Mujtaba with colleagues at a company celebration" loading="lazy" style="object-position:50% 70%"><span class="ptag">Company event</span><div><h3>Celebrations</h3><p>Wins, milestones, occasions.</p></div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="about">
+    <div class="sec-head rv">
+      <span class="eyebrow">Before HR</span>
+      <h2>I've been on the brand side too</h2>
+    </div>
+    <div class="earlier rv">
+      <div class="txt">
+        <span class="when">October – December 2024 · Remote</span>
+        <h3>Social Media Manager, Billgist</h3>
+        <ul>
+          <li>Created and scheduled Instagram posts, Reels and Stories in Canva, matched to the brand's tone and audience.</li>
+          <li>Tested caption styles, hashtag sets and posting times to find what got the most engagement and reach.</li>
+          <li>Kept the brand consistent with a regular content calendar and active community management.</li>
+        </ul>
+        <p style="color:var(--soft)">It's why employer branding and good job posts matter to me: hiring is marketing to the right people.</p>
+      </div>
+      <div>
+        <div class="phone-wrap" id="phonewrap" aria-hidden="true">
+          <div class="float-card fc1">Content calendar<small>This week</small><span class="cal"><i class="on"></i><i></i><i class="on2"></i><i class="on"></i><i></i></span></div>
+          <div class="float-card fc2">Made in Canva<small>Posts · Reels · Stories</small></div>
+          <div class="phone"><div class="scr">
+            <div class="sb"><span>9:41</span><i></i></div>
+            <div class="app"><b>Instagram</b><span><svg class="ic" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/></svg><svg class="ic" viewBox="0 0 24 24"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg></span></div>
+            <div class="stories"><span class="story"><i style="--g:#FFC23D"></i>Your story</span><span class="story"><i style="--g:#9FE3C4"></i>Reels</span><span class="story"><i style="--g:#B9C8FF"></i>Tips</span><span class="story seen"><i style="--g:#FFB3C1"></i>Team</span><span class="story seen"><i style="--g:#FFD98A"></i>FAQ</span></div>
+            <div class="phead"><span class="av">B</span><div><b>brand</b><small>Sponsored · Islamabad</small></div><svg class="ic" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></div>
+            <figure class="post"><span class="kick">New this week</span><span class="big">Fresh<br>drop.</span><span class="pill">Swipe to see more →</span><svg class="heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/></svg></figure>
+            <div>
+              <div class="acts"><svg class="ic like" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/></svg><svg class="ic" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg><svg class="ic" viewBox="0 0 24 24"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg><span class="sp"></span><svg class="ic" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/></svg></div>
+              <p class="cap"><b>brand</b> Fresh week, fresh content. Which one's your favourite? <span class="tags">#newdrop #smallbusiness</span><small>View all comments</small></p>
+            </div>
+            <div class="nav5"><svg class="ic" viewBox="0 0 24 24"><path d="M3 11 12 4l9 7v9H3Z"/></svg><svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M12 8v8M8 12h8"/></svg><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="m10 9 5 3-5 3Z"/></svg><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></div>
+          </div></div>
+        </div>
+        <p class="phone-cap">Illustration</p>
+      </div>
+    </div>
+
+    <div class="sec-head rv" style="margin-top:6rem">
+      <span class="eyebrow">Education</span>
+      <h2>Where I studied</h2>
+    </div>
+    <div class="edu">
+      <div class="rv"><span class="yr">Graduated June 2025</span><h3>BBA, Human Resource Management</h3><p>National University of Sciences and Technology (NUST), Islamabad. Focused on organizational behavior, talent management and employee engagement, applied through case studies, group projects and an internship.</p></div>
+      <div class="rv" style="--d:.08s"><span class="yr">A-Levels</span><h3>Benchmark School System</h3><p>Rawalpindi. Chemistry, Biology, Psychology and Urdu.</p></div>
+      <div class="rv" style="--d:.16s"><span class="yr">O-Levels</span><h3>Benchmark School System</h3><p>Rawalpindi.</p><span class="award">★ High Achiever's Award</span></div>
+    </div>
+
+    <div class="sec-head rv" style="margin-top:6rem">
+      <span class="eyebrow">Toolkit</span>
+      <h2>What I work with</h2>
+    </div>
+    <div class="kit">
+      <div class="rv"><h3>HR platforms</h3><div class="chips"><span class="chip big">PeopleForce</span><span class="chip big">GoHire</span></div></div>
+      <div class="rv" style="--d:.08s"><h3>Productivity and design</h3><div class="chips"><span class="chip">Word</span><span class="chip">Excel</span><span class="chip">PowerPoint</span><span class="chip">Canva</span></div></div>
+      <div class="rv"><h3>HR skills</h3><div class="chips"><span class="chip">Talent acquisition</span><span class="chip">Full-cycle recruitment</span><span class="chip">Candidate screening</span><span class="chip">Onboarding</span><span class="chip">Employee engagement</span><span class="chip">Employee relations</span><span class="chip">HR policy</span><span class="chip">Exit management</span><span class="chip">Employer branding</span></div></div>
+      <div class="rv" style="--d:.08s"><h3>With people</h3><div class="chips"><span class="chip">Stakeholder communication</span><span class="chip">Active listening</span><span class="chip">Emotional intelligence</span><span class="chip">Conflict resolution</span><span class="chip">Public speaking</span><span class="chip">Adaptability</span></div></div>
+    </div>
+  </section>
+
+  <section class="contact rv" id="contact">
+    <div>
+      <h2>Let's talk people.</h2>
+      <p>Hiring, onboarding, culture, or an HR role you think I'd be good at. I'm in Islamabad.</p>
+    </div>
+    <div class="crows">
+      <div class="crow"><div><div class="k">Email</div><span class="v">mujtabahaider215@gmail.com</span></div><button class="copy" type="button" data-copy="mujtabahaider215@gmail.com">Copy</button></div>
+      <div class="crow"><div><div class="k">Phone</div><span class="v">+92 323 002 1867</span></div><button class="copy" type="button" data-copy="+92 323 002 1867">Copy</button></div>
+      <div class="crow"><div><div class="k">LinkedIn</div><a href="https://www.linkedin.com/in/mujtaba-haider-3b51b81b5/" target="_blank" rel="noopener">mujtaba-haider ↗</a></div><a href="#cv" data-cv class="copy" style="text-decoration:none">View CV</a></div>
+    </div>
+  </section>
+
+  <footer><span>Mujtaba Haider · Islamabad, Pakistan</span><span>HR Executive · Talent Acquisition</span></footer>
+</div>
+
+<dialog class="cvd" id="cvd" aria-label="CV"><div class="cvbar"><span>Mujtaba Haider · CV</span><span style="display:flex;gap:.5rem;align-items:center"><a href="Mujtaba-Haider-CV.pdf" download style="font:700 .8rem var(--text);color:var(--ink);text-decoration:none;border:1.5px solid var(--line);border-radius:999px;padding:.4rem .85rem">Download PDF</a><button type="button" id="cv-close">Close ✕</button></span></div><div class="cvpages"><img src="cv-1.webp" alt="CV page 1" loading="lazy"><img src="cv-2.webp" alt="CV page 2" loading="lazy"></div></dialog>
+
+<script>
+const $=id=>document.getElementById(id);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- swinging, flippable ID badge ---------- */
+(function(){
+  const stage=$('stage'),badge=$('badge'),strap=$('strap'),strap2=$('strap2');
+  let ang=0,vel=reduce?0:0.055,drag=false,moved=false,last=null,pivot={x:0,y:0},len=0;
+  const K=0.018,DAMP=0.985,MAX=1.1;
+  function geo(){const r=stage.getBoundingClientRect();pivot={x:r.width/2,y:innerWidth<=900?-6:-40};len=Math.min(150,r.height*0.28)}
+  function place(){
+    const bx=pivot.x+Math.sin(ang)*len, by=pivot.y+Math.cos(ang)*len;
+    badge.style.transform=`translate(${bx-pivot.x}px,${by}px) rotate(${-ang*57.3*0.9}deg)`;
+    const top=stage.getBoundingClientRect().top;
+    const d=`M ${pivot.x-26} ${pivot.y} Q ${pivot.x-26+Math.sin(ang)*len*.4} ${pivot.y+len*.5} ${bx} ${by}`;
+    const d2=`M ${pivot.x+26} ${pivot.y} Q ${pivot.x+26+Math.sin(ang)*len*.4} ${pivot.y+len*.5} ${bx} ${by}`;
+    strap.setAttribute('d',d+' '+d2.replace('M','M'));strap2.setAttribute('d',d);
+  }
+  function tick(){
+    if(!drag){vel+=-K*Math.sin(ang);vel*=DAMP;ang+=vel;if(Math.abs(ang)>MAX){ang=Math.sign(ang)*MAX;vel*=-.5}}
+    place();requestAnimationFrame(tick);
+  }
+  geo();addEventListener('resize',geo);
+  badge.addEventListener('pointerdown',e=>{drag=true;moved=false;last={x:e.clientX,t:performance.now(),a:ang};badge.setPointerCapture(e.pointerId);badge.classList.add('dragging')});
+  badge.addEventListener('pointermove',e=>{if(!drag)return;const r=stage.getBoundingClientRect();
+    const dx=e.clientX-(r.left+pivot.x),dy=e.clientY-(r.top+pivot.y);if(Math.abs(e.clientX-last.x)>3)moved=true;
+    const na=Math.max(-MAX,Math.min(MAX,Math.atan2(dx,Math.max(40,dy))));const now=performance.now();
+    vel=(na-ang)/Math.max(1,(now-last.t)/16);ang=na;last={x:last.x,t:now,a:ang}});
+  const end=()=>{if(!drag)return;drag=false;badge.classList.remove('dragging');vel=Math.max(-.12,Math.min(.12,vel));if(!moved)flip()};
+  badge.addEventListener('pointerup',end);badge.addEventListener('pointercancel',end);
+  function flip(){const f=badge.classList.toggle('flipped');badge.setAttribute('aria-pressed',f);if(!reduce)vel+=.03}
+  badge.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();flip()}});
+  if(matchMedia('(hover: none)').matches)$('hint').innerHTML='Swing the badge · <kbd>tap</kbd> to flip';
+  tick();
+})();
+
+/* ---------- journey path drawn by scroll ---------- */
+(function(){
+  const jr=$('jr'),trail=$('trail'),drawn=$('drawn'),walker=$('walker');
+  let total=0;
+  function build(){
+    const r=jr.getBoundingClientRect(),stops=[...jr.querySelectorAll('.stop')];
+    const narrow=innerWidth<=900;
+    const pts=stops.map(s=>{const b=s.getBoundingClientRect();const y=b.top-r.top+b.height/2;
+      if(narrow)return {x:16,y};
+      const even=s.offsetLeft>r.width*0.3; return {x:even?b.left-r.left-40:b.right-r.left+40,y}});
+    const start={x:narrow?16:r.width/2,y:0},end={x:narrow?16:r.width/2,y:r.height};
+    const all=[start,...pts,end];let d=`M ${all[0].x} ${all[0].y}`;
+    for(let i=1;i<all.length;i++){const a=all[i-1],b=all[i];const my=(a.y+b.y)/2;d+=` C ${a.x} ${my}, ${b.x} ${my}, ${b.x} ${b.y}`}
+    trail.setAttribute('d',d);drawn.setAttribute('d',d);total=drawn.getTotalLength();
+    drawn.style.strokeDasharray=total;update();
+  }
+  function update(){
+    const r=jr.getBoundingClientRect();const p=Math.max(0,Math.min(1,(innerHeight*0.6-r.top)/r.height));
+    drawn.style.strokeDashoffset=total*(1-p);const pt=drawn.getPointAtLength(total*p);walker.setAttribute('cx',pt.x);walker.setAttribute('cy',pt.y);
+    jr.querySelectorAll('.stop').forEach(s=>{const b=s.getBoundingClientRect();s.classList.toggle('lit',b.top+b.height/2<innerHeight*0.6)});
+  }
+  addEventListener('scroll',update,{passive:true});addEventListener('resize',build);
+  document.fonts?.ready.then(build);setTimeout(build,300);build();
+})();
+
+/* ---------- phone illustration ---------- */
+(function(){const w=$('phonewrap');if(!w||reduce)return;new IntersectionObserver(([e])=>w.classList.toggle('live',e.isIntersecting)).observe(w)})();
+
+/* ---------- reveal on scroll ---------- */
+(function(){if(reduce||!('IntersectionObserver' in window))return;
+  const els=[...document.querySelectorAll('.rv')];
+  document.querySelectorAll('.culture .sticker').forEach((s,i)=>s.style.setProperty('--d',i*.08+'s'));
+  els.forEach(e=>{if(e.getBoundingClientRect().top<innerHeight*.95)e.classList.add('in')});
+  document.documentElement.classList.add('rv-on');
+  const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  els.forEach(e=>{if(!e.classList.contains('in'))io.observe(e)});
+})();
+
+/* ---------- nav highlight, CV dialog, copy ---------- */
+const cvd=$('cvd');
+(function(){const links=[...document.querySelectorAll('[data-sec]')];
+  const mark=k=>links.forEach(a=>a.classList.toggle('on',a.dataset.sec===k));
+  const pick=()=>{if(cvd.open)return mark('cv');const y=innerHeight*.4;let cur=null;
+    for(const id of ['journey','about','contact']){const el=$(id);if(el&&el.getBoundingClientRect().top<y)cur=id}
+    if(innerHeight+scrollY>=document.documentElement.scrollHeight-4)cur='contact';mark(cur)};
+  addEventListener('scroll',pick,{passive:true});pick();
+  new MutationObserver(pick).observe(cvd,{attributes:true,attributeFilter:['open']});
+})();
+document.addEventListener('click',e=>{
+  const cv=e.target.closest('[data-cv]');if(cv){e.preventDefault();cvd.showModal();return}
+  const c=e.target.closest('[data-copy]');if(c){navigator.clipboard?.writeText(c.dataset.copy).then(()=>{c.textContent='Copied';setTimeout(()=>c.textContent='Copy',1500)}).catch(()=>{const s=getSelection(),g=document.createRange();g.selectNodeContents(c.parentElement.querySelector('.v'));s.removeAllRanges();s.addRange(g)})}
+});
+$('cv-close').onclick=()=>cvd.close();cvd.addEventListener('click',e=>{if(e.target===cvd)cvd.close()});
+if(location.hash==='#cv')cvd.showModal();
+</script>
+</body>
+</html>
